@@ -9,6 +9,8 @@ WORKDIR /home/node
 
 ADD . /home/node
 
+RUN apk add git
+
 RUN yarn install
 
 RUN yarn build && yarn cache clean
