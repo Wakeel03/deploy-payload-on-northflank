@@ -5,7 +5,6 @@ import Users from './collections/Users';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
-  upload: { staticURL: '/uploads', staticDir: '/uploads' },
   admin: {
     user: Users.slug,
   },
