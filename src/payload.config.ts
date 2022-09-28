@@ -5,6 +5,9 @@ import Users from './collections/Users';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
+  rateLimit: {
+    trustProxy: true,
+  },
   admin: {
     user: Users.slug,
   },
